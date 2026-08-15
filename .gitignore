@@ -27,3 +27,6 @@ styled-system/
 
 # Wrangler
 .wrangler/
+
+# Upstream API docs / correspondence (kept local)
+docs/

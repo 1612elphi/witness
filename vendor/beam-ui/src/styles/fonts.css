@@ -1,0 +1,80 @@
+/*
+ * Beam Design Language — Font Declarations (self-hosted)
+ *
+ * All fonts ship inside this package under `styles/fonts/` — no CDN needed.
+ * Consumers import this file once at application startup:
+ *
+ *   import "@sunbeam/beam-ui/styles/fonts.css";
+ *
+ * Bundlers (Vite, Rollup, esbuild, webpack) will resolve the relative
+ * woff2 URLs and emit the font files alongside your other assets.
+ *
+ * Included families:
+ *   - Ysabeau Infant        variable, wght 1..1000, normal + italic (body + headings)
+ *   - Monaspace Argon       variable, wght 200..800 (monospace / code)
+ *   - Material Symbols Outlined  variable, wght 100..700 + FILL 0..1 (icons)
+ *
+ * Licenses: see styles/fonts/README.md.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Ysabeau Infant — Variable weight (body + heading)                   */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Ysabeau Infant";
+  src: url("./fonts/YsabeauInfantVar.woff2") format("woff2");
+  font-weight: 1 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ysabeau Infant";
+  src: url("./fonts/YsabeauInfantVar-Italic.woff2") format("woff2");
+  font-weight: 1 1000;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Monaspace Argon — Variable weight (monospace)                       */
+/* Axes: wght 200..800, wdth 100..125, slnt -11..0                     */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Monaspace Argon";
+  src: url("./fonts/MonaspaceArgonVar.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------------ */
+/* Material Symbols Outlined — Variable icons (wght + FILL axes)       */
+/* font-display: block avoids a ligature-fallback flash for icons.     */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  src: url("./fonts/MaterialSymbolsOutlined.woff2") format("woff2");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: block;
+}
+
+/* ------------------------------------------------------------------ */
+/* Material Symbols icon class                                         */
+/* ------------------------------------------------------------------ */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  -webkit-font-smoothing: antialiased;
+}

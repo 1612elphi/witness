@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "witness",
+  "account_id": "8ae1e539d80cb2935413c9a8e99a8f57",
+  "compatibility_date": "2026-08-14",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    { "pattern": "witness.delphi.tools", "custom_domain": true }
+  ]
+}
